@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+    #d1{background: pink}
+    #d2{background: red}
+    #d3{background: green}
+    #d4{background: yellow}
+
+    .p1 > span{
+        width: 100px;
+        height: 100px;
+        border: 2px dashed blue;
+        display: inline;
+    }
+    .p1{
+        text-align: center;
+    }
+
+    .p2 > div{
+        width: 100px;
+        height: 100px;
+        border: 2px dashed blue;
+        display: inline-block;
+    }
+    .p2{
+        text-align: center;
+    }
+ 
+    .d1 {
+        width: 100px;
+        height: 100px;
+        border: 2px dashed blue;
+        display: inline-block;
+        margin: 50px;
+    }
+    .p3{
+        text-align: center;
+    }
+
+    .p4 > div{
+        width: 100px;
+        height: 100px;
+        border: 2px dashed blue;
+        margin: 150px;
+    }
+    .p4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+    }
+
+    
+    </style>
+
+    <h1>this is spans</h1>
+    <div class="p1">
+        
+        <span id="d1">1</span>
+        <span id="d2">2</span>
+        <span id="d3">3</span>
+        <span id="d4">4</span>
+    </div>
+    <hr><hr><hr>
+    <h1>4 direct child with display inline-block</h1>
+    <div class="p2">
+            
+            <div id="d1">1</div>
+            <div id="d2">2</div>
+            <div id="d3">3</div>
+            <div id="d4">4</div>
+    </div>
+    <hr><hr><hr>
+    <h1>4 non-direct child with display inline-block</h1>
+    <div class="p3">
+            
+            <div>
+                <div class="d1" id="d1">1</div>
+                <div class="d1" id="d2">2</div>
+            </div>
+            <div >
+                <div class="d1" id="d3">3</div>
+                <div class="d1" id="d4">4</div>
+            </div>
+    </div>
+    <hr><hr><hr>
+        <h1>4 direct child divs with display flex-box</h1>
+    <div class="p4">
+            
+                <div id="d1">1</div>
+                <div id="d2">2</div>
+                <div id="d3">3</div>
+                <div id="d4">4</div>
+    </div>
+    <hr><hr><hr>
+
+</body>
+</html>
